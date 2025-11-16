@@ -1,0 +1,9 @@
+shell script:backup script
+#!/bin/bash
+# Author: Yash
+# Purpose: Backup a specified directory
+src=/home/yash/mydata
+dest=/home/yash/backup
+mkdir -p $dest
+cp -r $src $dest/backup_$(date +%Y%m%d_%H%M%S)
+echo "Backup completed successfully!"
