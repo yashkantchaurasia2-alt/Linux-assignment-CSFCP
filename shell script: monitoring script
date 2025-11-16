@@ -1,0 +1,8 @@
+shell script: monitoring script
+#!/bin/bash
+# Author: Yash
+# Purpose: Log CPU and Memory usage
+logfile=/home/yash/system_usage.log
+echo "CPU and Memory usage at $(date)" >> $logfile
+top -b -n1 | head -n 10 >> $logfile
+echo "Log saved to $logfile"c
