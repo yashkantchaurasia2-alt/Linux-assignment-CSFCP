@@ -1,0 +1,11 @@
+linux command
+ls -la 
+cd /home/yash && pwd
+mkdir projects && tree -a
+touch todo.txt && ls -l todo.txt
+cp notes.txt backup_notes.txt && ls backup_notes.txt
+mv todo.txt tasks.txt && ls tasks.txt
+rm backup_notes.txt && echo $?
+chmod 755 script.sh && ls -l script.sh
+sudo chown root:root script.sh && ls -l script.sh
+ps aux | head -n 5�
