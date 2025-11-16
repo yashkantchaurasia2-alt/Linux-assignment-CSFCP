@@ -1,0 +1,9 @@
+shell script: download script
+#!/bin/bash
+# Author: Yash
+# Purpose: Automatically download a file using wget
+url="https://example.com/samplefile.txt"
+dest="/home/yash/downloads"
+mkdir -p $dest
+wget -P $dest $url
+echo "File downloaded successfully to $dest"
